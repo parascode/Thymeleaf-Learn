@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Loop Example</title>
+</head>
+<body>
+	<h1>Iterating though collections using thymeleaf</h1>
+	<ul>
+		<li th:each="name, status : ${names}">
+			<span th:text="${status.index + 1}+' . '+${name}" 
+				th:style="${status.odd ? 'font-weight:bold' : 'color:red'} "
+			></span>
+		</li>
+	</ul>
+</body>
+</html>
