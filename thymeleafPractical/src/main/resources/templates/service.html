@@ -5,7 +5,10 @@
 	<title>Service Page</title>
 </head>
 <body>
-	<footer id="hostTag" th:replace="footer::fragment1">
+	<h1>This is our service page</h1>
+	<br />
+	
+	<footer id="hostTag" th:replace="footer::fragment1(${title}, ${subtitle})">
 	
 	</footer>
 </body>

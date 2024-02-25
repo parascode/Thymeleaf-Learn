@@ -36,7 +36,17 @@ public class MyController {
 		return "condition";
 	}
 	@GetMapping("/service")
-	public String serviceHandler() {
+	public String serviceHandler(Model m) {
+		m.addAttribute("title", "title from controller");
+		m.addAttribute("subtitle", "subtitle from controller");
 		return "service";
+	}
+	@GetMapping("/aboutnew")
+	public String aboutnew() {
+		return "aboutnew";
+	}
+	@GetMapping("/contact")
+	public String contact() {
+		return "contact";
 	}
 }

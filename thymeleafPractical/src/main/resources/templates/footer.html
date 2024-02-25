@@ -5,8 +5,10 @@
 	<title>Footer fragments</title>
 </head>
 <body>
-	<footer id="fragmentTag" th:fragment="fragment1">
+	<footer id="fragmentTag" th:fragment="fragment1(title, subtitle)">
 		<div class="conatainer">
+			<h1 th:text="${title}"></h1>
+			<h1 th:text="${subtitle}"></h1>
 			<h1>About build.io</h1>
 			<h1>We help you build your ideas!</h1>
 			<h1>Feel free to reach us.</h1>
