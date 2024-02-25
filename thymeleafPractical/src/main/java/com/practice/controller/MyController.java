@@ -35,4 +35,8 @@ public class MyController {
 		m.addAttribute("mylist", list);
 		return "condition";
 	}
+	@GetMapping("/service")
+	public String serviceHandler() {
+		return "service";
+	}
 }
