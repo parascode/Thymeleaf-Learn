@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Example page</title>
+	<link rel="stylesheet" href="" th:href="@{/css/MyStyle.css}"/>
+	<link rel="stylesheet" href="" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+	<div class="container">
+		<h1>Adding css, javascript and images in thymeleaf</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nisi reiciendis illum nemo magnam architecto odit quibusdam quis quaerat quisquam et possimus debitis necessitatibus iusto at nam laudantium ipsum quam magni vel esse ex distinctio minus vitae adipisci sit ipsa a quia nesciunt velit temporibus beatae voluptatibus nihil. Animi ducimus?</p>
+		<img src="" class="profile" alt="Profile Photo" th:src="@{/images/profile.jpg}"/>
+	</div>
+	<script src="" th:src="@{/js/MyScript.js}"></script>
+	<script src="" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
